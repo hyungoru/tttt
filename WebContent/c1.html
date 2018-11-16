@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="EUC-KR">
+    <title>Insert title here</title>
+    <style>
+        /* Global Css Start*/
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        #main_div {
+            margin: auto;
+            width: 800px;
+        }
+        
+        /*Global Css end*/
+
+        /*Header start*/
+
+        #header_div {
+            width: 800px;
+            height: 150px;
+            background: red;
+            position:relative;
+        }
+        #header_div > ul {
+            text-align: right;
+        }
+        #header_div > #main_top {
+            float: right;
+        }
+        #header_div > #main_bottom{
+            position : absolute;
+            bottom:0;
+            left:160px;
+        }
+        #header_div > ul >li {
+            display: inline;
+            margin : 10px;
+        }
+        #header_div > ul >li :hover {
+            color : white;
+        }
+
+        #header_div >h1{
+            clear: both;
+            margin-top:20px;
+            text-align: center;
+        }
+        /*header end*/
+
+        /* center start */
+        #center_div {
+            width: 800px;
+            height: 500px;
+           
+        }
+        #center_div >div{
+             float:left;
+        }
+        #center_div > #left_div {
+            width: 30%;
+            height: 500px;
+            background: pink;
+            
+        }
+
+        #center_div > #right_div {
+            width: 70%;
+            height: 500px;
+            background: green;
+        }
+
+        /* center end */
+
+        /* Footer start */
+
+        #footer_div {
+            width: 800px;
+            height: 50px;
+            background: black;
+        }
+
+        /* Footer end */
+    </style>
+</head> 
+
+<body>
+    <div id="main_div">
+        <div id="header_div">
+           <ul id="main_top">
+               <li><a href="#">LOGIN</a></li>
+               <li><a href="#">REGISTER</a></li>
+               <li><a href="#">ABOUT US</a></li>
+           </ul>
+           <h1> Main Page </h1>
+           <ul id="main_bottom">
+               <li><a href="c2.html">HTML5</a></li>
+               <li><a href="#">CSS3.0</a></li>
+               <li><a href="#">JQuery</a></li>
+               <li><a href="#">AJAX</a></li>
+           </ul>
+        </div>
+        <div id="center_div">
+             <div id="left_div"></div>
+             <div id="right_div"></div>
+                Main
+        </div>
+        <div id="footer_div"></div>
+    </div>
+</body>
+
+</html>
